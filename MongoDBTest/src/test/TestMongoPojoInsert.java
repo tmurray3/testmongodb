@@ -65,7 +65,7 @@ public class TestMongoPojoInsert {
 			
 			PersonPojo person = null;
 			
-			for( int i=0; i<Constants.createNumberOfRecords;i++) {
+			for( int i=0; i<Constants.CREATE_NUMBER_OF_RECORDS;i++) {
 				person=new PersonPojo();
 				
 				user = new StringBuilder("user");
@@ -176,7 +176,7 @@ public class TestMongoPojoInsert {
 	
 	public static void main(String[] args) {
 		if (args!=null && args.length>0) {
-			Constants.createNumberOfRecords=Integer.parseInt(args[0]);
+			Constants.CREATE_NUMBER_OF_RECORDS=Integer.parseInt(args[0]);
 		}
 		new TestMongoPojoInsert();
 
